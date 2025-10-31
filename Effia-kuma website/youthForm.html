@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musama church int</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/Leaders.css">
+    <link rel="stylesheet" href="css/choir.css">
+    <link rel="stylesheet" href="css/youth.css">
+    <link rel="stylesheet" href="css/youthForm.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+</head>
+
+<body>
+    <nav class="navbar">
+    <div class="logo-section">
+      <img src="images/images.png" alt="logo">
+      <h2>Musama Church Int.</h2>
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+
+      <li class="dropdown">
+        <a href="#">Associations ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="Leaders.html">Leaders</a></li>
+          <li><a href="choir.html">Choir</a></li>
+          <li><a href="band">Band</a></li>
+          <li><a href="men fellowship">Men Followship</a></li>
+          <li><a href="women fellowship">Womens Followship</a></li>
+          <li><a href="youth.html">Youth</a></li>
+          <li><a href="children.html">Childern Ministry</a></li>
+        </ul>
+      </li>
+
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+    <div class="form-container">
+        <h2>Musama Youth Registration</h2>
+
+        <form action="#" method="POST">
+
+            <div class="input-box">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="input-box">
+                <label>Date of Birth</label>
+                <input type="date" required>
+            </div>
+
+            <div class="input-box">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="e.g. 0551234567" required>
+            </div>
+
+            <div class="input-box">
+                <label>Email</label>
+                <input type="email" placeholder="example@gmail.com" required>
+            </div>
+
+            <div class="input-box">
+                <label>Gender</label>
+                <select required>
+                    <option disabled selected>-- Select Gender --</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+
+            <div class="input-box">
+                <label>Address / Location</label>
+                <input type="text" placeholder="Where do you stay?" required>
+            </div>
+
+            <div class="input-box">
+                <label>Emergency Contact</label>
+                <input type="tel" placeholder="Parent/Guardian contact" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Registration</button>
+        </form>
+    </div>
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

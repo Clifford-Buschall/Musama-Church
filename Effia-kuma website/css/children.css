@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  background: #01043d;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-section img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: red;
+}
+
+/* Dropdown Styling */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 35px;
+  background: hsla(0, 0%, 20%, 0.2);
+  backdrop-filter: blur(5px);
+  list-style: none;
+  display: none;
+  min-width: 150px;
+  border-radius: 5px;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.dropdown-menu li a:hover {
+    color: white;
+  background: #ffffff29;
+} 
+.children-ministry {
+  padding: 130px 20px;
+  height: 80vh;
+}
+
+.children-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin: 0 auto;
+}
+
+.children-content {
+  max-width: 600px;
+}
+
+.children-content h2 {
+  font-size: 32px;
+  color: #01043d;
+  margin-bottom: 20px;
+}
+
+.children-content p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.children-image img {
+  width: 500px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 992px) {
+      .children-container {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .children-image,
+      .children-content {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: flex;
+      }
+
+      .nav-links {
+        position: fixed;
+        top: 65px;
+        right: -100%;
+        height: 100vh;
+        width: 220px;
+        background: #01043d;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 20px;
+        transition: 0.3s;
+      }
+
+      .nav-links li {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      .nav-links li a {
+        width: 100%;
+        padding: 15px 20px;
+      }
+
+      .nav-links.active {
+        right: 0;
+      }
+
+      .dropdown-menu {
+        position: static;
+      }
+
+      .dropdown:hover .dropdown-menu {
+        display: none;
+      }
+
+      .dropdown.active .dropdown-menu {
+        display: block;
+      }
+    }

@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ============= NAVBAR ============= */
+.navbar {
+  background: #01043d;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-section img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #ff3b3b;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 35px;
+  background: hsla(0, 0%, 20%, 0.2);
+  backdrop-filter: blur(5px);
+  list-style: none;
+  display: none;
+  min-width: 150px;
+  border-radius: 5px;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px;
+  white-space: nowrap;
+  text-align: center;
+  color: #fff;
+}
+
+.dropdown-menu li a:hover {
+  background: #ffffff29;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* ======== BODY PAGE FIX ======== */
+body {
+  background: #f3f8ff;
+  padding-top: 100px; /* space for fixed navbar */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* ======== FORM CONTAINER ======== */
+.form-container {
+  background: #ffffff;
+  padding: 30px;
+  width: 420px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* ======== FORM STYLING ======== */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #01043d;
+  font-weight: 700;
+}
+
+.input-box {
+  margin-bottom: 15px;
+}
+
+.input-box label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-box input,
+.input-box select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #c6d4e1;
+  outline: none;
+  transition: 0.3s;
+  background: #fff;
+}
+
+.input-box input:focus,
+.input-box select:focus {
+  border-color: #0078ff;
+}
+
+/* ======== SUBMIT BUTTON ======== */
+.submit-btn {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 6px;
+  background: #010889;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #01043d;
+}
+
